@@ -1,0 +1,927 @@
+/**************************************
+			  Layout CSS
+**************************************/
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+.clear{
+  clear: both;
+} 
+
+input[type="text"], input[type="password"]{
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  padding: 1px 2px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+input:-webkit-autofill { /* Fix Google Chrome Yellow Input Fields */
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+/**** Display class name ****/
+/*
+div:before {
+ content: attr(id); 
+ font-family: Helvetica;
+ font-size: 14px;
+ color: #6a6a6a;
+ letter-spacing: 5px;
+ position: relative;
+ }
+*/
+ 
+/*
+ table:before {
+ content: attr(id); 
+ font-family: Helvetica;
+ font-size: 10px;
+ font-style: italic;
+ color: #fff;
+ letter-spacing: 5px;
+ }
+*/
+
+
+
+
+/**************************************
+			JMField Font
+**************************************/
+
+
+@font-face {
+	font-family: 'jmfield';
+	src: url('../fonts/jmfield.eot');
+	src: url('../fonts/jmfield.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/jmfield.svg#icomoon') format('svg'),
+		url('../fonts/jmfield.woff') format('woff'),
+		url('../fonts/jmfield.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/**************************************
+			Ends class name
+**************************************/
+
+
+
+#wrapper{
+  width: 980px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+#wrapHeader{
+  width: 100%;
+}
+
+#superWrapper{
+  height: 100%;
+}
+
+#header{
+  width: 100%;
+}
+
+#banner{
+  width: 100%;
+}
+
+#toolbar{
+  width: 100%;
+  height: 50px; /***** Toolbar height *****/
+/*   background: #b9b9b9; */
+}
+
+#toolbar ul{
+  width: 805px; /***** Menu width *****/
+  margin: 0 auto;
+}
+
+#toolbar ul li{
+  float: left;
+}
+
+#toolbar ul li a{
+  display: block;
+  margin: 0 15px; /**** Menu buttons space ****/
+  width: 120px;
+}
+
+#content, #contentAccount, #contentCart, #contentCheckout{
+  width: 100%;
+  background: #fff;
+  padding: 20px 0;
+}
+
+#pageview, .checkoutLayout{
+  width: 100%;
+  position: relative;
+}
+
+.error{
+  width: 400px!important;
+  padding: 10px 5px 10px 50px!important;
+}
+
+.error br:nth-child(2), .error br:nth-child(4){
+  display: none;
+}
+
+
+/**************************************
+			Leftbar styles
+**************************************/
+
+#leftbar{
+/*   position: relative; */
+  width: 200px;
+  margin: 25px;
+  float: left;
+  z-index: 1000;
+}
+
+#leftbar #features{
+  width: 100%;
+/*   background: #525252; */
+  clear: both;
+}
+
+#leftbar #features tr td{
+  background: none!important;
+}
+
+#maincontent{
+  width: 690px;
+  padding: 20px 40px 10px 0;
+  float: right;
+
+}
+
+#maincontent #Table7 #Table8{
+  background: none!important;
+  margin: 0 0 0 20px;
+}
+
+#maincontent #Table1{
+  background: none!important;
+}
+
+#leftbar #newcategorylist #catlist_selected > a{
+  color: #333;
+  font-weight: bold;
+}
+
+#leftbar #catlist_selected{
+  padding-left: 12px;
+}
+
+#leftbar #newcategorylist #catlist_selected > ul#categorychild > li#catlist, #leftbar #newcategorylist #catlist_selected > ul#categorychild > li#catlist_selected{
+  margin-left: 8px;
+}
+
+#leftbar #newcategorylist #catlist_selected > ul#categorychild > li#catlist a, #leftbar #newcategorylist #catlist_selected > ul#categorychild > li#catlist_selected a{
+  color: #333;
+}
+
+#leftbar #features ul li a{
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#leftbar #features ul li a:hover{
+	padding: 0 0 0 7px;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+
+/**************************************
+			Signup Layout
+**************************************/
+
+#content #tbLogin{
+  margin: 0 0 20px 0;
+  width: 380px;
+  position: relative;
+  display: block;
+}
+
+#content #tbLogin tr{
+  height: 35px;
+}
+
+#content #tbLogin tr td.mid_font_nobold{
+  width: 400px;
+  line-height: 22px;
+}
+
+#content #tbLogin tr td.mid_font_nobold input[type="text"], #content #tbLogin tr td.mid_font_nobold input[type="password"]{
+  width: 200px;
+  float: right; /* Align inputs to right */
+}
+
+#content #tbLogin tr{
+  text-align: left;
+}
+
+#content #maincontent table#Table8 tr td{
+  background: none!important;
+}
+
+#content #maincontent table#Table13{
+  background: none!important;
+}
+
+#content #maincontent #Table15 td.mid_font_nobold input[type="submit"]{
+  display: block;
+  margin: 25px 0 0 0;
+}
+
+#Table17.info{
+  padding: 10px 5px 0 5px;
+}
+
+
+/**** Error ****/
+
+#content #maincontent #Table17.info{
+  border-collapse: separate;
+  background: none!important;
+  border: 1px solid #ccc!important;
+  display: block;
+  height: 100px;
+  margin: 0 0 30px 35px!important;
+  box-shadow: 0 0 5px #ccc!important;
+  text-shadow: none!important;
+} 
+
+#content #maincontent #Table1.info{
+  border-collapse: separate;
+  background: none!important;
+  border: 1px solid #ccc!important;
+  display: block;
+  height: 100px;
+  margin: 0 0 30px 35px!important;
+  box-shadow: 0 0 5px #ccc!important;
+  text-shadow: none!important;
+  padding: 5px;
+}
+
+
+#content #maincontent #Table17.info span.mid_font, #content #maincontent #Table1.info span.mid_font{
+  display: block;
+  padding: 5px!important;
+} 
+
+/**************************************
+	default	Individual Product Page
+**************************************/
+
+table#productView table#Table6, table#productView table#Table8 {
+	margin: 0 auto;
+	text-align: center;
+	
+}
+
+#maincontent #productView{
+	width: 490px;
+}
+
+
+
+
+/**************************************
+			Chekout layout
+**************************************/
+
+#contentCheckout{
+  padding: 20px 0;
+}
+
+#contentCheckout .checkoutLayout #formcheckout fieldset{
+  width: 100%!important;
+}
+
+#contentCheckout .checkoutLayout #formcheckout table#Table6{
+  width: 750px!important;
+}
+
+#contentCheckout .checkoutLayout #formcheckout table#Table6 legend{
+  margin: 0 0 15px 0;
+  padding: 0 0 3.5px 0;
+  width: 80%;
+  font-size: 22px;
+}
+
+#contentCheckout .checkoutLayout #formcheckout table#Table6 tr td:first-child{
+  width: 350px;
+  margin: 0 30px 0 0 ;
+}
+
+#contentCheckout .checkoutLayout #formcheckout table#Table6 #tblShippingOptions tr td{
+  width: auto!important;
+}
+
+#contentCheckout .checkoutLayout #formcheckout table#Table6 #tblShippingOptions tr td label{
+  display: block;
+  width: 240px!important;
+  padding: 0 0 0 10px;
+  line-height: 19px;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table12{
+  width: 100%!important;
+  margin:0 auto!important;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table12 td{
+  width: auto!important;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table11{
+  border-collapse: separate!important;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: 10px 0 35px 0;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table11 tr:first-child{
+  font-family: Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 35px;
+  font-weight: bold;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table11 input{
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table12 td table#Table13{
+  float: right!important;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table12 td a[onclick="__dopostback();"]{
+  clear: both;
+  float: right!important;
+}
+
+#contentCheckout .checkoutLayout #formcheckout table#Table6 input[type="text"]{
+  color: #666666;
+  width: 184px;
+  padding: 2px 3px;
+  height: 14px;
+}
+
+#contentCheckout .checkoutLayout #formcheckout table#Table6 textarea{
+  width: 187px;
+  padding: 3px;
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  resize: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+#contentCheckout .checkoutLayout #formcheckout table#Table6 select option{
+  width: 170px;
+}
+
+#contentCheckout .checkoutLayout #formcheckout table#Table6 select{
+  width: 195px!important; 
+  height: 19px;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table6 tr td{
+  text-align: left; /*** Fix align of input element -sounds weird but it's true, due to inline styles… ***/
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table6 tr th{
+  width: 110px;
+  text-align: right;
+  padding: 0 10px 0 0;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table11 tr:nth-child(2) td{
+  background: none!important;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table11 tr th:nth-child(8), #contentCheckout .checkoutLayout #formcheckout #Table11 tr:first-child th:nth-child(9){
+  display: none; /************ Erase TD's greater than 7 *********/
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table11 td[colspan="9"]{
+  display: none; /************ Erase TD's with colspan=9 ***********/
+}
+
+#contentCheckout .checkoutLayout #formcheckout input#placeorder[name="placeorder"]{
+  clear: both;
+  float: right;
+}
+
+#contentCheckout .checkoutLayout #formcheckout img#ordering{
+  clear: both;
+  float: right;
+}
+
+
+#contentCheckout .checkoutLayout #formcheckout #Table7.addresstable tr td, #contentCheckout .checkoutLayout #formcheckout #shippingaddresstable.addresstable tr{
+  height: 27px;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #shippingaddresstable.addresstable{
+  margin: 10px 0 25px 0;
+} 
+
+#contentCheckout .checkoutLayout #formcheckout #shippingaddresstable.addresstable tr:nth-child(2) td{
+  font-size: 10px;
+  font-style: italic;
+} 
+
+#contentCheckout .checkoutLayout #formcheckout #shippingaddresstable.addresstable tr:nth-child(2){
+  height: 43px;
+} 
+
+#contentCheckout .checkoutLayout #formcheckout #shippingaddresstable.addresstable tr:nth-child(2) td input{
+  display: block;
+}
+
+.addresstable #tr_shipdisplayoptions td{
+  vertical-align: middle;
+  height: 75px;
+}
+
+.addresstable #tr_shipdisplayoptions td div{
+  background: #f9f9f9!important;
+  width: 181px!important;
+  border: solid 1px #ccc!important;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  font-size: 12px!important;
+  line-height: 20px;
+  box-shadow: inset 0 0 8px #ccc;
+  -moz-box-shadow: inset 0 0 8px #ccc;
+  -webkit-box-shadow: inset 0 0 8px #ccc;
+}
+
+.addresstable #tr_shipdisplayoptions td div label{
+  color:#333!important;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table12 #Table13{
+  margin: 0 0 13px 0;
+  border-collapse: separate;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table12 #Table13 tr{
+  height: 23px;
+  background: none!important;
+  vertical-align: middle!important;
+  font-family: Helvetica, Arial, sans-serif;
+  text-transform: lowercase!important;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table12 #Table13 tr th{
+  vertical-align: middle!important;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table12 #Table13 tr:first-child th{
+  height: 35px!important;
+  background: #f4f4f4;
+  font-family: Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight:bold;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 5px;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table12 #Table13 tr:nth-child(2){
+  height: 30px;
+  vertical-align: bottom;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table12 #Table13 tr:nth-child(2) th{
+  height: 20px;
+  vertical-align: bottom!important;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #tblpayment tr{
+  height: 25px;
+}
+
+#contentCheckout .checkoutLayout #formcheckout .checkoutNotice{
+  margin: 20px 0;
+  color: #e54f1b;
+}
+
+#contentCheckout .checkoutLayout #Table11 .thumbnail{
+	padding: 8px;
+}
+
+#contentCheckout .checkoutLayout #formcheckout label[for="chkMatchBilling"]{
+  font-size: 12px;
+  font-style: italic;
+  line-height: 23px;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table11 tr:first-child th:nth-child(7){
+	text-align: center!important;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #Table11 tr td:nth-child(6), #contentCheckout .checkoutLayout #formcheckout #Table11 tr td:nth-child(7){
+	text-align: center!important;
+}
+
+/** Budget Account Management **/
+
+#contentCheckout .checkoutLayout #Table12 #Table18{
+	width: 93%;
+	margin: 20px 0;
+	border: solid 1px #afafaf;
+	border-collapse: separate;
+	border-radius: 5px;		
+}
+
+#contentCheckout .checkoutLayout #Table12 tr:first-child td fieldset{
+	width: 450px!important;
+}
+
+#contentCheckout .checkoutLayout #Table12 tr:first-child td fieldset legend{
+	font-size: 22px;
+	margin: 0 0 15px 0;
+	padding: 0 0 3.5px 0;
+	border-bottom: 4px solid #12213c;
+}
+
+#contentCheckout .checkoutLayout #Table12 #Table18 #Table19{
+	border: none!important;
+}
+
+#contentCheckout .checkoutLayout #Table12 #Table18 #Table19 #Table24 tr td, #contentCheckout .checkoutLayout #Table12 #Table18 #Table19 #Table24 tr th{
+	padding: 7px;
+}
+
+#contentCheckout .checkoutLayout #Table12 #Table18 #Table19 #Table24 tr:first-child td{
+	background: #f4f4f4;
+	font-weight: bold;
+	padding: 10px 7px;
+	border-bottom: solid 1px #ccc;
+}
+
+#contentCheckout .checkoutLayout #Table12 #Table18 #Table19 #Table24 tr:last-child td{
+	color: #E54F1B;
+	border-top: solid 1px #ccc;
+	text-align: center;
+}
+
+/** credit card image **/
+
+#contentCheckout .checkoutLayout #formcheckout #tblCCPayment .imagebox{
+  width: 106px!important;
+  height: 90px;
+  float: left;
+  padding: 13px 10px 10px 0;
+}
+
+#contentCheckout .checkoutLayout #formcheckout #tblCCPayment .imagebox img{
+	width: 100%;
+	height: auto;
+}
+
+/**************************************
+			Footer layout
+**************************************/
+
+#sticky-footer{
+  position: fixed;
+  padding: 5px 0;
+  background: #313131;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  color: #fff;
+}
+
+#sticky-footer .copyright{
+  float: left;
+  line-height: 17px;
+}
+
+#sticky-footer .credits{
+  float: right;
+  line-height: 17px;
+}
+
+#sticky-footer .credits a{
+  color: #fff;
+  line-height: 17px;
+  position: relative;
+  margin: 0 0 0 25px;
+}
+
+#sticky-footer .credits a:before {
+  content: attr(data-icon);
+  font-family: 'jmfield';
+  font-size: 20px;
+  content: "\21";
+  speak: none;
+  position: absolute;
+  left: -22px;
+}
+
+#wrapFooter{
+  width: 980px;
+  margin: 0 auto;
+}
+
+
+/**************************************
+				Cart
+**************************************/
+
+#contentCart #maincontent #Form8 #Table28{
+  width: 100%;
+}
+
+#contentCart #maincontent #Form8 #Table28 tr th.shoppingCartItemsTh:first-child{
+  width: 500px;
+}
+
+#contentCart #maincontent #Form8 #Table28 tr th .cart.small_font_nobold{
+  line-height: 36px;
+}
+
+#contentCart #maincontent #Form7[name="frmAddToCart"]{
+  margin: 0 0 40px 0!important;
+}
+
+#contentCart #maincontent #Form7 img[name="continueShopping"]{
+  float: right;
+}
+
+
+
+/**************************************
+				Reset
+**************************************/
+
+#addresssection{
+  text-align: left!important; /* (center) */
+}
+
+#Addins{
+  width: 193px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#Addins br{
+  display: none;
+}
+
+#Addins #Form6 #Table23 tr td{
+  border: none!important;
+  background: none;
+  margin: 0 auto;
+}
+
+#Addins #Form6 #Table23 tr td #Table24{
+  margin: 0 auto;
+}
+
+#Addins #Form6 #Table23 tr td #Table24 tr td #Table7{
+  margin: 10px 0 0 0;
+}
+
+#Addins #Form6 #Table23{
+  border-collapse: separate;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  -moz-border: 5px;
+  -webkit-border: 5px;
+  -ms-border-radius: 5px;
+  background: none;
+}
+
+#Addins #Form6 #Table23 tr td img{
+  border-radius: 5px;
+}
+
+#Addins #Form6 #Table23 tr td b{
+  line-height: 20px;
+}
+
+.productSearchResults li{
+  position: relative;
+}
+
+.product_name_link{
+    bottom: 5px;
+    left: 50px;
+    width: 115px;
+    position: absolute;
+}
+
+.thankyou{
+  padding: 20px!important;
+}
+
+/**************************************
+			Account Styles
+**************************************/
+
+#contentAccount #accountarea{
+  padding: 20px 20px 50px 20px;
+}
+
+#contentAccount #accountarea ul#accountsettingslist li a.categoryname{
+  display: block;
+  margin: 15px 0 0 0;
+}
+
+#contentAccount #accountarea ul#accountsettingslist li br{
+  display: none;
+}
+
+#contentAccount #accountarea td.mid_font_nobold{
+  line-height: 32px;
+}
+
+#contentAccount #accountarea input[type="text"], #contentAccount #accountarea input[type="password"]{
+  margin: 5px 0;
+}
+
+#contentAccount #accountarea #tbAddressBook, #contentAccount #accountarea #tbAddressBook table{
+  width: 100%!important;
+}
+
+#contentAccount #accountarea #tbAddressBook .tr_addressbook_listing_header{
+  border-collapse: separate
+  text-align: center;
+  font-size: 12px;
+}
+
+#contentAccount #accountarea #tbAddressBook .tr_addressbook_listing_header th{
+  background: #414141;
+  color: #fff;
+  border-right: solid 1px #999;
+  height: 25px;
+  line-height: 25px;
+}
+
+#contentAccount #accountarea #tbAddressBook .tr_addressbook_listing_header th:first-child{
+  border-radius: 5px 0 0 0;
+}
+
+#contentAccount #accountarea #tbAddressBook .tr_addressbook_listing_header th:last-child{
+  border-radius: 0 5px 0 0;
+  border-right: none;
+}
+
+#contentAccount #accountarea #tbAddressBook tr td table tr:first-child td{
+  border-bottom: none;
+}
+
+#contentAccount #accountarea #tbAddressBook tr td table tr td:first-child{
+  border-left: 1px solid #999;
+}
+
+#contentAccount #accountarea #tbAddressBook tr td table tr td{
+  background: #fff;
+  border-right: solid 1px #999;
+  border-bottom: solid 1px #999;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+#contentAccount #accountarea #tbAddressBook tr td table tr td:last-child{
+  background: #fff;
+  border: none;
+}
+
+#contentAccount #accountarea #tbAddressBook tr{
+  text-align: center;
+  vertical-align: middle!important;
+}
+
+#contentAccount #accountarea #tbAddressBook tr td{
+  vertical-align: middle!important;
+}
+
+#contentAccount #accountarea #tbAddressBook #Form8{
+  display: block!important;
+  margin: 0 0 25px 0!important;
+  position: relative;
+}
+
+#contentAccount #accountarea #tbAddressBook #Form8 #searchaddress{
+  position: absolute;
+}
+
+#contentAccount #accountarea #tbAddressBook img{
+  display: none!important;
+}
+
+#contentAccount #accountarea #tbAddressBook .tr_addressbook_listing_header th:nth-child(2){
+  width: 90px!important;
+}
+
+#contentAccount #accountarea #tbAddressBook .tr_addressbook_listing_header th:nth-child(3), #contentAccount #accountarea #tbAddressBook .tr_addressbook_listing_header th:nth-child(4){
+  width: 100px;
+}
+
+#contentAccount #accountarea #tbAddressBook .tr_addressbook_listing_header th:nth-child(2){
+  width: 90px!important;
+}
+
+#contentAccount #accountarea #tbAddressBook .tr_addressbook_listing_header th:nth-child(5){
+  width: 120px!important;
+}
+
+#contentAccount #accountarea #tbAddressBook .tr_addressbook_listing_header th:nth-child(10){
+  width: 50px!important;
+}
+
+
+#information, .info {
+	height: 30px;
+	width: 400px;
+	margin:0 auto 40px;
+	
+}
+
+#information img {
+	padding-right:15px;
+}
+
+form#Form4 input#Image5{
+	height: 18px!important;
+}
+
+form#Form5 input[name="Image2"]{
+	height: 18px!important;	
+}
+
+
+/* Expense Accounts */
+
+#contentAccount #accountarea .orderlist{
+	margin: 35px 0;
+}
+
+#contentAccount #accountarea .orderlist > tbody > tr th{
+	background: #11213b;
+	color: #fff;
+	font-size: 16px;
+	padding: 10px;
+	border: solid 1px #f9f9f9;
+}
+
+#contentAccount #accountarea .orders_on > td{
+	padding: 10px;
+	border: solid 1px #ddd;
+}
+
+#contentAccount #accountarea .orders_off > td{
+	padding: 10px;
+	border: solid 1px #ddd;
+	background: #f9f9f9;
+}
+
+/* Thankyou Page */
+
+.thankyou_page #features{
+	margin: 25px 0 0 25px;
+}
+
+.thankyou_page #ThankYouContent{
+	margin: 25px 0 0 0;
+}
+
+/**************************************
+			Extra Styles
+**************************************/
+
